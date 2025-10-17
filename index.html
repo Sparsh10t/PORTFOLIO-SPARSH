@@ -14,11 +14,11 @@
    
     <!--HEADER SECTION-->
     <header>
-        <div class=" mx-12 my-8 p-3 w-auto h-auto bg-[rgba(255,255,255,0.03)] backdrop-blur-[10px] flex justify-between items-center xl:flex-row sm:flex-col sm:gap-5 px-20 border-2  border-white/5 rounded-[2rem] ">
+        <div class=" mx-12 my-8 p-3 w-auto h-auto bg-[rgba(255,255,255,0.03)] backdrop-blur-[10px] flex justify-between items-center flex-col xl:flex-row sm:flex-col sm:gap-5 px-20 border-2  border-white/5 rounded-[2rem] ">
             <div class="xl:text-4xl sm:text-3xl font-bold bg-gradient-to-r from-[#60a5fa] to-[#3b82f6] bg-clip-text text-transparent transform hover:scale-105 transition duration-400">
                 <a href="#">SPARSH GUPTA</a> </div>
             <div class=" ">
-                <ul class=" flex space-x-6 text-white xl:text-md sm:text-sm group">
+                <ul class=" flex space-x-6 flex-wrap text-white xl:text-md sm:text-sm group">
                     <li><a href="#home" class="inline-block transition-all duration-100 ease-linear border-b-0 hover:border-b-2 border-blue-500 text-white hover:bg-gradient-to-r hover:from-[#60a5fa] hover:to-[#3b82f6] hover:bg-clip-text hover:text-transparent">HOME</a></li>
                     <li><a href="#about" class="inline-block transition-all duration-100 ease-linear border-b-0 hover:border-b-2 border-blue-500 text-white hover:bg-gradient-to-r hover:from-[#60a5fa] hover:to-[#3b82f6] hover:bg-clip-text hover:text-transparent">ABOUT ME</a></li>
                     <li><a href="#skills" class="inline-block transition-all duration-100 ease-linear border-b-0 hover:border-b-2 border-blue-500 text-white hover:bg-gradient-to-r hover:from-[#60a5fa] hover:to-[#3b82f6] hover:bg-clip-text hover:text-transparent">SKILLS</a></li>
@@ -32,14 +32,26 @@
     <!--MAIN SECTION-->
 
 <!-- HOME PAGE -->
-    <section id="home" class=" mx-auto my-40  p-3 w-[60%] h-full flex  flex-col justify-center items-center gap-5 " >
-        <div><h1 class="xl:text-7xl sm:text-6xl  font-extrabold leading-tight bg-gradient-to-r from-[#f3f4f6] to-[#60a5fa] bg-clip-text text-transparent">Hi, I'm Sparsh Gupta</h1></div>
-        <div><h2 class="xl:text-4xl sm:text-3xl leading-tight font-bold text-[#9ca3af]">Frontend Web Developer</h2></div>
-        <div><p class="text-[#d1d5db] font-normal">I’m a passionate Computer Science student exploring the world of DSA, Web Development, and AI/ML. I love building things that solve real problems — from creative front-end designs to intelligent machine learning models.</p></div>
-        <div><a href="#projects"><button class="cursor-pointer text-white px-6 py-4 xl:m-6 sm:m-3 transform hover:-translate-y-1 transition-all duration-100 shadow-[0_10px_30px_rgba(59,130,246,0.3)] hover:shadow-[0_15px_40px_rgba(59,130,246,0.5)]  rounded-4xl font-bold bg-[#2563eb]">View My Work</button> </a>
-             <button class="cursor-pointer text-white px-6 py-4 xl:m-6 sm:m-3 transform hover:-translate-y-1 transition-all duration-100 shadow-[0_10px_30px_rgba(59,130,246,0.3)] hover:shadow-[0_15px_40px_rgba(59,130,246,0.5)]  rounded-4xl font-bold bg-[#2563eb]">View Resume</button>
-        </div>
-    </section>
+<section id="home" class="mx-auto my-20 px-4 sm:px-6 md:px-12 flex flex-col justify-center items-center gap-5 text-center">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-[#f3f4f6] to-[#60a5fa] bg-clip-text text-transparent">
+        Hi, I'm Sparsh Gupta
+    </h1>
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#9ca3af]">Frontend Web Developer</h2>
+    <p class="text-[#d1d5db] text-base sm:text-lg md:text-xl max-w-2xl">
+        I’m a passionate Computer Science student exploring the world of DSA, Web Development, and AI/ML. I love building things that solve real problems.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 mt-6">
+        <a href="#projects" class="w-full sm:w-auto">
+            <button class="w-full sm:w-auto text-white px-6 py-4 rounded-3xl font-bold bg-[#2563eb] hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200">
+                View My Work
+            </button>
+        </a>
+        <button class="w-full sm:w-auto text-white px-6 py-4 rounded-3xl font-bold bg-[#2563eb] hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200">
+            View Resume
+        </button>
+    </div>
+</section>
+
 
 <!-- ABOUT PAGE -->
      <section id="about" class="grid xl:grid-cols-2 sm:grid-cols-1 sm:gap-10 mx-auto my-30 p-3 h-full w-auto ">
@@ -244,8 +256,8 @@
                 <div class="text-white text-3xl font-bold ">Portfolio</div>
                 <div class="text-[#d1d5db] font-normal">A personal portfolio built by using HTML,TAILWIND CSS and JAVASCRIPT  </div>
                 <div>
-                <a href="https://sparsh10t.github.io/TIC-TAC-TOE-SPARSH/" target="_blank"><button class="cursor-pointer text-white px-2 py-1 m-1 transform hover:-translate-y-1 transition-all duration-100 shadow-[0_10px_30px_rgba(59,130,246,0.3)] hover:shadow-[0_15px_40px_rgba(59,130,246,0.5)]  rounded-[12px] font-normal bg-[#2563eb]">🔗 Live Demo</button></a>
-                 <button class="cursor-pointer text-white px-2 py-1 m-1 transform hover:-translate-y-1 transition-all duration-100 shadow-[0_10px_30px_rgba(59,130,246,0.3)] hover:shadow-[0_15px_40px_rgba(59,130,246,0.5)]  rounded-[12px] font-normal bg-[rgba(255,255,255,0.03)] backdrop-blur-[10px]"><a href="#">💻 Source Code</a></button>
+                <a href="https://sparsh10t.github.io/PORTFOLIO-SPARSH/" target="_blank"><button class="cursor-pointer text-white px-2 py-1 m-1 transform hover:-translate-y-1 transition-all duration-100 shadow-[0_10px_30px_rgba(59,130,246,0.3)] hover:shadow-[0_15px_40px_rgba(59,130,246,0.5)]  rounded-[12px] font-normal bg-[#2563eb]">🔗 Live Demo</button></a>
+                <a href="https://github.com/Sparsh10t/PORTFOLIO-SPARSH.git" target="_blank"><button class="cursor-pointer text-white px-2 py-1 m-1 transform hover:-translate-y-1 transition-all duration-100 shadow-[0_10px_30px_rgba(59,130,246,0.3)] hover:shadow-[0_15px_40px_rgba(59,130,246,0.5)]  rounded-[12px] font-normal bg-[rgba(255,255,255,0.03)] backdrop-blur-[10px]">💻 Source Code</button></a>
                 </div>
             </div>
         </div>
